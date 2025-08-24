@@ -28,8 +28,7 @@ We were inspired to build **UrjaBandhu ("Energy Friend")**, a phone-based AI com
   $P_{\text{total}}(t) = \sum_{i=1}^{n} P_i(t) + \epsilon(t)$
 - **XGBoost** → consumption & bill forecasting:  
   $C = \sum_{i=1}^{k} r_i \cdot E_i$
-- **Random Forest** → blackout prediction:  
-  $\text{Risk} = \begin{cases} \text{High} & \text{if } P_{\text{load}} > 0.9 \cdot P_{\text{max}} \\ \text{Medium} & \text{if } 0.7 \cdot P_{\text{max}} < P_{\text{load}} \leq 0.9 \cdot P_{\text{max}} \\ \text{Low} & \text{if } P_{\text{load}} \leq 0.7 \cdot P_{\text{max}} \end{cases}$
+- **Random Forest** → blackout prediction: $P_{\text{load}} > 0.9 \cdot P_{\text{max}} \rightarrow \text{High Risk}$
 
 ### ⚡ Optimization Engine  
 Linear programming for smart usage recommendations:  
